@@ -25,7 +25,7 @@ def main():
         computeWinner(computerHand,playerHand)
         
         #Do you want to keep playing?
-        keepPlaying = input("Play again? Input 'y' for Yes or 'n' for No")
+        keepPlaying = input("Play again? Input 'y' for Yes or 'n' for No ")
         
     
     #Print scoring results here?????
