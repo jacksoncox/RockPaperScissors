@@ -79,15 +79,15 @@ def computeWinner(computerHand,playerHand):
     
     elif computerHand == "Scissors" and playerHand == "Rock":
         #result = 'win' or winAmt++
-        print("Rock beats paper. You win!")
+        print("Rock smashes Scissors. You win!")
     
     elif computerHand == "Paper" and playerHand == "Scissors":
         #result = 'win' or winAmt++ 
-        print("Scissors beats Paper. You win!")
+        print("Scissors cuts Paper. You win!")
     
     elif computerHand == "Rock" and playerHand == "Paper":
         #result = 'win' or winAmt++
-        print("Paper beats Rock. You win!")
+        print("Paper covers Rock. You win!")
     
     else:
         #result = 'lose' or lossAmt++
