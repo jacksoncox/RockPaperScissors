@@ -1,0 +1,119 @@
+'''
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+'''
+#import random function for computer choice
+import random
+
+def main():
+    #winAmt = 0
+    #lossAmt = 0
+    #tieAmt = 0
+    #Score system WIP 
+    
+    keepPlaying = 'y'
+    
+    while keepPlaying == 'y':
+        #Game on
+        print("Rock Paper Scissors initiated.")
+        
+        #Get hands from computer and player using functions not yet made
+        playerHand = getPlayerHand()
+        computerHand = getComputerHand()
+        
+        #Display Hands
+        print("You chose", playerHand,)
+        print("Computer chose", computerHand,)
+        
+        #Compute Winner 
+        computeWinner(computerHand,playerHand)
+        
+        #Do you want to keep playing?
+        keepPlaying = input("Play again? Input 'y' for Yes or 'n' for No")
+        
+    
+    #Print scoring results here?????
+    
+    
+#User hand    
+def getPlayerHand():
+    choice = int(input("Select 1 for Rock, 2 for Paper, or 3 for Scissors. "))
+    
+    #Error handing / Try to end program if new input doesnt work 
+    while choice != 1 and choice != 2 and choice != 3:
+        print("Invalid input")
+        choice = int(input("Enter a valid number 1-3"))
+    
+    #Assign hands to input
+    if choice == 1:
+        choice = "Rock"
+    elif choice == 2:
+        choice = "Paper"
+    else:
+        choice = "Scissors"
+        
+    return choice
+
+#Computer hand    
+def getComputerHand():
+    choice = random.randint(1,3)
+    
+    #Assign hands to randomly generated int
+    if choice == 1:
+        choice = "Rock"
+    elif choice == 2:
+        choice = "Paper"
+    else:
+        choice = "Scissors"
+        
+    return choice
+    
+def computeWinner(computerHand,playerHand):
+    if computerHand == playerHand:
+        #result = 'tie' or tieAmt++
+        print("TIE GAME!")
+    
+    elif computerHand == "Scissors" and playerHand == "Rock":
+        #result = 'win' or winAmt++
+        print("Rock beats paper. You win!")
+    
+    elif computerHand == "Paper" and playerHand == "Scissors":
+        #result = 'win' or winAmt++ 
+        print("Scissors beats Paper. You win!")
+    
+    elif computerHand == "Rock" and playerHand == "Paper":
+        #result = 'win' or winAmt++
+        print("Paper beats Rock. You win!")
+    
+    else:
+        #result = 'lose' or lossAmt++
+        print("You lose!")
+
+main()
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
