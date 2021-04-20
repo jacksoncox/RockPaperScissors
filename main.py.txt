@@ -1,11 +1,13 @@
 #import random function for computer choice
 import random
 
+#winAmt = 0
+#lossAmt = 0
+#tieAmt = 0
+#Score system WIP 
+
 def main():
-    #winAmt = 0
-    #lossAmt = 0
-    #tieAmt = 0
-    #Score system WIP 
+
     
     keepPlaying = 'y'
     
