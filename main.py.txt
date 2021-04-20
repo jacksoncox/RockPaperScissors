@@ -69,7 +69,7 @@ def getComputerHand():
 def computeWinner(computerHand,playerHand):
     if computerHand == playerHand:
         #result = 'tie' or tieAmt++
-        print("TIE GAME!")
+        print("It's a Tie!")
     
     elif computerHand == "Scissors" and playerHand == "Rock":
         #result = 'win' or winAmt++
