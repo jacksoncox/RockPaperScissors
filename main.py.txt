@@ -28,7 +28,7 @@ def main():
         #Get hands from computer and player using functions not yet made
         playerHand = getPlayerHand()
         computerHand = getComputerHand()
-        
+        print("")        
         #Display Hands
         print("You chose", playerHand,)
         print("Computer chose", computerHand,)
@@ -77,6 +77,7 @@ def getComputerHand():
     return choice
     
 def computeWinner(computerHand,playerHand):
+
     if computerHand == playerHand:
         #result = 'tie' or tieAmt++
         print("It's a Tie!")
@@ -108,7 +109,8 @@ def computeWinner(computerHand,playerHand):
     else:
         #result = 'lose' or lossAmt++
         print("You lose, somehow!")
-
+    
+    print("")
 main() #Runs program
 
     
